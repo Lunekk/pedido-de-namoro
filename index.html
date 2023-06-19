@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pedido de Namoro</title>
+ 	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="styles.css">
+
+
+    <style>
+        /* Estilos CSS para o site */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            text-align: center;
+            padding-top: 100px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            color: #fff;
+        }
+        
+        p {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function abrirMensagemCarinhosa(tipo) {
+            if (tipo === 'aceitar') {
+                window.location.href = 'mensagem_carinhosa_aceitar.html';
+            } else if (tipo === 'recusar') {
+                window.location.href = 'mensagem_carinhosa_recusar.html';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Pedido de Namoro</h1>
+    <p>Olá! Eu tenho algo muito importante para te dizer.</p>
+    <p>Desde que nos conhecemos, você tem sido especial para mim. Você me faz feliz e eu não consigo imaginar minha vida sem você.</p>
+    <p>Então, o que você acha de ser a pessoa com quem eu quero compartilhar a minha vida?</p>
+    <button class="button" onclick="abrirMensagemCarinhosa('aceitar')">Aceitar</button>
+    <button class="button" onclick="abrirMensagemCarinhosa('recusar')">Recusar</button>
+</body>
+</html>
